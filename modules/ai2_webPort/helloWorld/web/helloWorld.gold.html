@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style type="text/css">
+            html, body {
+                /* Make the page full-screen */
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #hello {
+                /* Hide the element initially */
+                display: none;
+
+                /* Centre the text */
+                text-align: center;
+            }
+            #myButton {
+                /* Centre the button at the bottom of the screen */
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            #restartButton {
+                /* Centre the button in the middle of the screen */
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+
+                /* Change the button's colour and hide initially */
+                background-color: #444;
+                color: white;
+                display: none;
+            }
+            #myButton, #restartButton {
+                /* Change the font size */
+                font-size: 2em;
+                width: 10em;
+                height: 2em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Create a header and a button -->
+        <h1 id="hello">Hello World!</h1>
+        <button id="restartButton">Restart</button>
+        <button id="myButton">Click me!</button>
+
+        <script>
+            // Handle clicks.
+            function handleClick() {
+                // Increase the click counter.
+                nClicks++;
+
+                // Different text based on number of clicks.
+                if (nClicks == 1) {
+                    helloText.style.display = 'block';
+                } else if (nClicks == 5) {
+                    helloText.innerHTML = 'Stop clicking me!';
+                } else if (nClicks == 10) {
+                    helloText.innerHTML = 'Seriously!!!';
+                } else if (nClicks == 20) {
+                    helloText.innerHTML = 'That\'s it. Goodbye.';
+                } else if (nClicks == 21) {
+                    helloText.style.display = 'none';
+                    restartButton.style.display = 'inline-block';
+                }
+            }
+
+            // Restart (reset to initial values).
+            function restart() {
+                nClicks = 0;
+                helloText.innerHTML = 'Hello World!';
+                restartButton.style.display = 'none';
+            }
+
+            // Counter variable to count clicks.
+            var nClicks = 0;
+
+            // Get references to each element.
+            var myButton = document.getElementById('myButton');
+            var helloText = document.getElementById('hello');
+            var restartButton = document.getElementById('restartButton');
+
+            // Attach click handlers to both buttons.
+            myButton.addEventListener('click', handleClick);
+            restartButton.addEventListener('click', restart);
+        </script>
+    </body>
+</html>
