@@ -1,4 +1,4 @@
-# helloWorld
+# HelloWorld
 
 ["Hello, World!"](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) is the first program of almost every programmer. It is one of the most basic programs you can write, and simply displays the text "Hello, World!" to a screen (or other output).
 
