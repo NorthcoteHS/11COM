@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOUR TITLE GOES HERE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Uncomment to use external CSS
+        <link rel="stylesheet" href="PATH/TO/EXTERNAL/STYLES.CSS">
+        -->
+
+        <style type="text/css">
+            .question {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Moose Rights</h1>
+        <p>
+            One of Canada's most divisive issues leading into the 2018 election cycle is that of Moose Rights. While beavers have had the privilege of voting since being declared our national animal in 1975, moose-kind has been left behind. Some argue that accommodating such large animals in a voting booth would be logistically challenging, others still have trouble accepting moose as more than mere pets (a practice now largely frowned upon), while many are outraged that moose are still struggling for such a basic mammal right.
+        </p>
+
+        <p>
+            Please tell us what you think about this pivotal issue in Canadian politics.
+        </p>
+
+        <h2>Survey</h2>
+        <form>
+            <p>
+                <!-- Interval (Quantitative) data -->
+                <span class="question">Year level:</span>
+                <input type="number" name="year" min="9" max="12">
+            </p>
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question">Gender:</span>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="other">Other</label>
+            </p>
+            <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">How often do you interact with moose?</span>
+                <br/>
+                <label><input type="radio" name="interact" value="many">Multiple times a day</label>
+                <label><input type="radio" name="interact" value="daily">At least once a day</label>
+                <label><input type="radio" name="interact" value="weekly">At least once a week</label>
+                <label><input type="radio" name="interact" value="monthly">At least once a month</label>
+                <label><input type="radio" name="interact" value="less">Less than once a month</label>
+            </p>
+            <p>
+                <!-- Ordinal (Qualitative) data -->
+                <span class="question">On a scale of 0 to 5, how much effect has Drake's 2016 hit song "Moose Truce" had on your opinion of moose rights?</span>
+                <br/>
+                <label><input type="radio" name="drake" value="0">0 (None)</label>
+                <label><input type="radio" name="drake" value="0">1 (Very little effect)</label>
+                <label><input type="radio" name="drake" value="0">2 (Some)</label>
+                <label><input type="radio" name="drake" value="0">3 (Moderate)</label>
+                <label><input type="radio" name="drake" value="0">4 (A great deal)</label>
+                <label><input type="radio" name="drake" value="0">5 (Extremely influential)</label>
+            </p>
+            <p>
+                <!-- Ratio (Quantitative) data -->
+                <span class="question">How many moose do you personally know?</span>
+                <br/>
+                <input type="number" name="know" min="0">
+            </p>
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question">Which of these statements describes your relationship with a moose? Tick all that apply.</span>
+                <br/>
+                <label><input type="checkbox" name="relation_am">I am a moose</label>
+                <label><input type="checkbox" name="relation_parent">My parent(s) is/are a moose</label>
+                <label><input type="checkbox" name="relation_relative">I have other moose relatives</label>
+                <label><input type="checkbox" name="relation_partner">I am in a relationship with a moose</label>
+                <label><input type="checkbox" name="relation_friend">I am friends with a moose</label>
+                <label><input type="checkbox" name="relation_colleague">I work or attend school with a moose</label>
+            </p>
+            <p>
+                <!-- Ratio (Quantitative) data -->
+                <span class="question">As a result of the 2012 PETA "Free the Moose" campaign, how many of your friends or family have released their pet moose into the wild?</span>
+                <br/>
+                <input type="number" name="release" min="0">
+            </p>
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question">Had you ever considered moose rights before this article?</span>
+                <br/>
+                <label><input type="radio" name="consider" value="yes">Yes</label>
+                <label><input type="radio" name="consider" value="no">No</label>
+            </p>
+            <p>
+                <!-- Nominal (Qualitative) data -->
+                <span class="question">Finally, do you think moose should be allowed to vote?</span>
+                <br/>
+                <label><input type="radio" name="vote" value="yes">Yes</label>
+                <label><input type="radio" name="vote" value="no">No</label>
+            </p>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Uncomment to use external JavaScript
+        <script src="PATH/TO/EXTERNAL/SCRIPT.JS"></script>
+        -->
+
+        <script>
+            /* Your JS goes here */
+        </script>
+    </body>
+</html>
