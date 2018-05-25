@@ -31,9 +31,22 @@
         <h2>Survey</h2>
         <form>
             <p>
-                <!-- Interval (Quantitative) data -->
+                <!-- Nominal (Qualitative) data -->
                 <span class="question">Year level:</span>
-                <input type="number" name="year" min="9" max="12">
+                <select name="year">
+                    <option value="9">Year 9</option>
+                    <option value="10">Year 10</option>
+                    <option value="11">Year 11</option>
+                    <option value="12">Year 12</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Other">Other</option>
+                </select>
+            </p>
+            <p>
+                <!-- Interval (Quantitative) data -->
+                <span class="question">Age:</span>
+                <input type="number" name="age" min="0">
             </p>
             <p>
                 <!-- Nominal (Qualitative) data -->
