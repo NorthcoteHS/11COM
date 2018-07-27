@@ -23,9 +23,10 @@ Your program should be able to translate single words to Pig Latin. As an extens
 
 4. Work on the logic...
 
-    - Start simple: try *always* removing the first letter and adding "ay" to the end.
-    - Now work on only removing the first letter if it's a vowel (a,e,i,o,u)
-    - Consider this: What will your program do if the user inputs a string with more than one word (eg. "Mario Kart")? It could...
+    - Start simple: try *always* removing the first letter and adding it and "ay" to the end.
+    - Now work on finding the index of the first vowel - try using a for loop, and checking each character to see if it's a vowel (a,e,i,o,u)
+        - if using a for loop, you will want to store the index when you find a match, then exit out of the loop (`break`)
+    - If you're up for it, consider: What will your program do if the user inputs a string with more than one word (eg. "Mario Kart")? It could...
         - Translate it to "ario KartMay" (this is a bronze-level solution)
         - Tell the user they've made a mistake, and ask them to retry
         - Translate all of the words in the string to Pig Latin (hard)
@@ -49,7 +50,8 @@ Your program should be able to translate single words to Pig Latin. As an extens
 | Input elements | <ul><li>[Different input types (W3Schools)](https://www.w3schools.com/tags/att_input_type.asp)</li></ul> |
 | Buttons     | <ul><li>[Button tag (W3Schools)](https://www.w3schools.com/tags/tag_button.asp)</li><li>[onclick event (W3Schools)](https://www.w3schools.com/tags/ev_onclick.asp)</li></ul> |
 | Getting contents | <ul><li>[getElementById() (W3Schools)](https://www.w3schools.com/jsref/met_document_getelementbyid.asp)</li><li>[Input text value property (W3Schools)](https://www.w3schools.com/jsref/prop_text_value.asp)</li></ul> |
-| String manipulation | <ul><li>[JS string methods (W3Schools)](https://www.w3schools.com/js/js_string_methods.asp) - especially `slice()`</li><li>to get the first letter, try `str[0]` or `str.charAt(0)`</li><li>to work on each word separately, try `str.split(' ')`</li></ul> |
+| String manipulation | <ul><li>[JS string methods (W3Schools)](https://www.w3schools.com/js/js_string_methods.asp) - especially `slice()`</li><li>to get the first letter, try `str[0]` or `str.charAt(0)`</li><li>[JS string length](https://www.w3schools.com/jsref/jsref_length_string.asp)</li><li>to work on each word separately, try `str.split(' ')`</li></ul> |
+| For loops   | <ul><li>[JS for loop (W3Schools)](https://www.w3schools.com/js/js_loop_for.asp)</li><li>[JS break (to exit a loop)](https://www.w3schools.com/js/js_break.asp)</li></ul> |
 | Displaying results | <ul><li>[JavaScript popup boxes (alert) (W3Schools)](https://www.w3schools.com/js/js_popup.asp)</li><li>[DOM innerHTML property](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)</li></ul> |
 
 ## Assessment
