@@ -52,6 +52,9 @@
                     }
                 }
 
+                // Trim the final trailing ', '.
+                result = result.slice(0, result.length-2);
+
                 // Display the result.
                 resultEl.innerHTML = result;
             }
