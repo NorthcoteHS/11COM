@@ -22,22 +22,22 @@
 
         <script>
             // Get elements.
-            fizzEl = document.getElementById('fizz');
-            buzzEl = document.getElementById('buzz');
-            maxEl = document.getElementById('maxNum');
-            resultEl = document.getElementById('result');
+            var fizzEl = document.getElementById('fizz');
+            var buzzEl = document.getElementById('buzz');
+            var maxEl = document.getElementById('maxNum');
+            var resultEl = document.getElementById('result');
 
             function generate() {
                 // Get fizz, buzz, and maxNum values.
-                fizz = fizzEl.value;
-                buzz = buzzEl.value;
-                maxNum = maxEl.value;
+                var fizz = fizzEl.value;
+                var buzz = buzzEl.value;
+                var maxNum = maxEl.value;
 
                 // Start the result as an empty string.
-                result = '';
+                var result = '';
 
                 // Loop from 1 to maxNum.
-                for (i=1; i<=maxNum; i++) {
+                for (var i=1; i<=maxNum; i++) {
                     if (i % fizz == 0 && i % buzz == 0) {
                         result += 'Fizz Buzz, ';
                     }
