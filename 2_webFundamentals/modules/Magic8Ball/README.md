@@ -32,7 +32,7 @@ Your task is to recreate Magic8Ball for the web. To do so, you will have to lear
 |--------|--------------|
 | Bronze | Button causes an alert-box with a random response |
 | Silver | Button changes an existing element's contents to display the response |
-| Gold   | Sound, visual features, ability to enter the question, etc. |
+| Gold   | Able to enter the question, and the program recognises "key phrases" to which it gives unique responses |
 
 - **Note:** all code should be commented and you should have no redundant code
 
