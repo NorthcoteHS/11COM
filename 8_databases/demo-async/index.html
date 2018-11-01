@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOUR TITLE GOES HERE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style type="text/css">
+            #display {
+                border-collapse: collapse;
+            }
+            #display td, #display th {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Enter a new high score</h1>
+        Name: <input type="text" id="tblName"><br>
+        Game: <input type="text" id="tblGame"><br>
+        Score: <input type="number" id="tblScore"><br><br>
+        <button onclick="submit()">Submit</button>
+
+        <h1>High Scores</h1>
+        <table id="display"></table>
+
+        <!-- Include JQuery for AJAX calls. -->
+        <script src="./jquery-3.3.1.min.js"></script>
+
+        <script>
+            var result = [];
+
+            // Catch AJAX errors.
+            $(document).ajaxError(function(event, jqXHR, ajaxSettings, thrownError) {
+                console.log(jqXHR.responseText);
+            });
+
+            function submit() {
+                // Build the data to submit.
+                var data = {
+                    tblName: document.getElementById('tblName').value,
+                    tblGame: document.getElementById('tblGame').value,
+                    tblScore: document.getElementById('tblScore').value
+                };
+
+                // Submit via AJAX.
+                $.ajax({
+                    type: 'POST',
+                    url: './insert-async.php',
+                    data: data,
+                    success: function(data, status, xhr) {
+                        query();
+                    }
+                });
+            }
+
+            function query(data, status, xhr) {
+                // Send the query via AJAX.
+                $.ajax({
+                    type: 'GET',
+                    url: './query-async.php',
+                    success: function(data, status, xhr) {
+                        result = JSON.parse(data);
+                        refresh();
+                    }
+                });
+            }
+
+            function refresh() {
+                // Build a table to display the results.
+                var out = '<tr><th>Name</th><th>Game</th><th>Score</th>';
+                result.forEach(function(row) {
+                    out += '<tr><td>' + row['tblName'] + '</td><td>' + row['tblGame'] + '</td><td>' + row['tblScore'] + '</td></tr>';
+                });
+
+                // Update the table on the page.
+                document.getElementById('display').innerHTML = out;
+            }
+
+            //
+            window.onload = query;
+        </script>
+    </body>
+</html>

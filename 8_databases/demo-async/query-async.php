@@ -17,9 +17,9 @@ Usage:
 
 // Setup DB info.
 $servername = "localhost";
-$username = "???";
-$password = "???";
-$dbname = "???";
+$username = "demo";
+$password = "demo";
+$dbname = "dbDemo";
 
 // Create connection.
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -31,7 +31,7 @@ if ($conn->connect_error) {
 }
 
 // Query DB.
-$sql = "SELECT * FROM Table;";
+$sql = "SELECT * FROM myTable ORDER BY tblScore DESC;";
 $resultObj = $conn->query($sql);
 
 // Parse the query result.
@@ -39,6 +39,8 @@ if ($resultObj->num_rows > 0) {
 	while ($row = $resultObj->fetch_assoc()) {
 		$result[] = $row;
 	}
+} else {
+    $result = [];
 }
 
 // Return the query result as a JSON string.
