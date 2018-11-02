@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <style type="text/css">
+            /* Format the table to have black cell borders. */
             #display {
                 border-collapse: collapse;
             }
@@ -15,19 +16,35 @@
     </head>
 
     <body>
+        <!-- Input form. -->
         <h1>Enter a new high score</h1>
         Name: <input type="text" id="tblName"><br>
         Game: <input type="text" id="tblGame"><br>
         Score: <input type="number" id="tblScore"><br><br>
         <button onclick="submit()">Submit</button>
 
+        <!-- Report. -->
         <h1>High Scores</h1>
         <table id="display"></table>
+
 
         <!-- Include JQuery for AJAX calls. -->
         <script src="./jquery-3.3.1.min.js"></script>
 
         <script>
+            /*
+                Students:
+                =========
+
+                Most of this script can be left as-is, without changing.
+                You will need to change these pieces:
+                    1. Change the fields of `data` in the submit() function.
+                    2. Change the entire refresh() function to create your report.
+                        - If you want your report to be a table, just modify the line inside of `result.forEach()`.
+                    3. Add any other JavaScript behaviour you want your page to have.
+            */
+
+            // Empty array (with global scope) to store the query results.
             var result = [];
 
             // Catch AJAX errors.
@@ -36,6 +53,8 @@
             });
 
             function submit() {
+                /* STUDENTS:  Modify the `data` field below. */
+
                 // Build the data to submit.
                 var data = {
                     tblName: document.getElementById('tblName').value,
@@ -67,6 +86,8 @@
             }
 
             function refresh() {
+                /* STUDENTS:  Modify this code to create your own report. */
+
                 // Build a table to display the results.
                 var out = '<tr><th>Name</th><th>Game</th><th>Score</th>';
                 result.forEach(function(row) {
@@ -77,7 +98,7 @@
                 document.getElementById('display').innerHTML = out;
             }
 
-            //
+            // Query the database when the window first loads.
             window.onload = query;
         </script>
     </body>
