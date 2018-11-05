@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 
-<?php
-/*
-Usage:
-- Change the values for username, password, dbname, and the query.
-- Host this PHP script on the same server as your SQL.
-- Call it from an HTML form using <form action="query-redirect.php">.
-- Fill in your remaining HTML, CSS, and JS for this form to appear as desired.
-- The result of the query has been made available as `result` in the script tag.
-    - It will be an array of rows (each row has fieldnames and values).
-
-See here for more details:
-  https://www.w3schools.com/php/php_ajax_php.asp
-*/
-
-// Setup DB info.
-$servername = "localhost";
-$username = "???";
-$password = "???";
-$dbname = "???";
-
-// Create a SQL connection.
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection.
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-}
-
-// Query DB.
-$sql = "SELECT * FROM Table;";
-$resultObj = $conn->query($sql);
-
-// Parse the query result.
-if ($resultObj->num_rows > 0) {
-	while ($row = $resultObj->fetch_assoc()) {
-		$result[] = $row;
-	}
-}
-
-// Close the connection.
-$conn->close();
-?>
-
 <html>
-  <head></head>
-  <body>
+    <head>
+        <title>Form submission</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <?php
+        /*
+        Usage:
 
-    <script>
-      // Pass the query result from PHP to JS.
-      var result = <?php echo json_encode($result); ?>;
-    </script>
-  </body>
+        1. Modifying this script:
+            - Change the values for username, password, dbname.
+            - Program in your $tableSQL and $insertSQL commands.
+            - Host this PHP script on the same server as your SQL.
+        2. Using the result:
+            - Call this page from an HTML form using <form action="insert-redirect.php">.
+            - Fill in your remaining HTML, CSS, and JS for this form to appear as desired.
+        */
+
+        /* --- INITIAL SETUP --- */
+        /* STUDENTS: Setup your DB info here! */
+        $servername = "localhost";
+        $username = "???";
+        $password = "???";
+        $dbname = "???";
+
+
+        /* --- SQL --- */
+        // This function will run within each post array including multi-dimensional arrays.
+        function ExtendedAddslash(&$params, $conn) {
+            foreach ($params as &$var) {
+                // check if $var is an array. If yes, it will start another ExtendedAddslash() function to loop to each key inside.
+                is_array($var) ? ExtendedAddslash($var) : $var="'" . mysqli_real_escape_string($conn, $var) . "'";
+                unset($var);
+            }
+        }
+
+        // Create a SQL connection and run ExtendedAddslash on all of $_POST.
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($conn->connect_error) {
+            http_response_code(500);
+            die("Connection failed: " . $conn->connect_error);
+        }
+        ExtendedAddslash($_POST, $conn);
+
+
+        /* --- SQL COMMANDS --- */
+        /* STUDENTS: Program your SQL commands here! */
+
+        // SQL to create the table, if it doesn't exist (ignore the "EOT" syntax).
+        $tableSQL = <<<EOT
+        CREATE TABLE IF NOT EXISTS myTable (
+            tblID INT NOT NULL AUTO_INCREMENT,
+            tblName VARCHAR(100)
+        );
+        EOT;
+
+        // SQL to insert the new record into the table (ignore the "EOT" syntax).
+        $insertSQL = <<<EOT
+        INSERT INTO myTable (tblName) VALUES (
+            {$_POST["tblName"]}
+        );
+        EOT;
+
+
+        /* --- SQL CONTINUED --- */
+        // Issue pre-defined table and insert SQL statements.
+        if ($conn->query($tableSQL) !== TRUE) {
+            http_response_code(500);
+            die("Error creating table: " . $tableSQL . "\n" . $conn->error);
+        }
+        if ($conn->query($insertSQL) !== TRUE) {
+            http_response_code(500);
+            die("Error adding record: " . $insertSQL . "\n" . $conn->error);
+        }
+
+        // Display success message.
+        echo "<p>Record submitted succesfully.</p>";
+
+        // Close the connection.
+        $conn->close();
+        ?>
+
+        <p><a href="./index.html">Return home</a></p>
+
+        <script>
+        </script>
+    </body>
 </html>
