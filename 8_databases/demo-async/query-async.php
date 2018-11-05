@@ -8,7 +8,7 @@ Usage:
     - Host this PHP script on the same server as your SQL.
 2. Using the result:
     - Call this page from JS using AJAX.
-    - Check for HTTP response code 200 (OK) or 400 (Bad Request) for completion.
+    - Check for HTTP response code 200 (OK) or 500 (Internal Server Error) for completion.
     - Use JSON.parse(this.responseText) to receive the response as a JS object.
     - The object will be an array of rows (each row has fieldnames and values).
     - See here for more details:
@@ -36,7 +36,7 @@ EOT;
 // Create a SQL connection and check that it was successful.
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
-    http_response_code(400);
+    http_response_code(500);
 	die("Connection failed: " . $conn->connect_error);
 }
 
