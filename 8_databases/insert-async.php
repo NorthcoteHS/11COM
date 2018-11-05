@@ -8,7 +8,7 @@ Usage:
     - Host this PHP script on the same server as your SQL.
 2. Using the result:
     - Call this page from JS using AJAX.
-    - Check for HTTP response code 200 (OK) or 400 (Bad Request) for completion.
+    - Check for HTTP response code 200 (OK) or 500 (Internal Server Error) for completion.
     - See here for more details:
       https://www.w3schools.com/php/php_ajax_php.asp
 */
@@ -34,7 +34,7 @@ function ExtendedAddslash(&$params, $conn) {
 // Create a SQL connection and run ExtendedAddslash on all of $_POST.
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
-    http_response_code(400);
+    http_response_code(500);
 	die("Connection failed: " . $conn->connect_error);
 }
 ExtendedAddslash($_POST, $conn);
@@ -54,7 +54,7 @@ EOT;
 // SQL to insert the new record into the table (ignore the "EOT" syntax).
 $insertSQL = <<<EOT
 INSERT INTO myTable (tblName) VALUES (
-    $_POST["tblName"]
+    {$_POST["tblName"]}
 );
 EOT;
 
@@ -62,12 +62,12 @@ EOT;
 /* --- SQL CONTINUED --- */
 // Issue pre-defined table and insert SQL statements.
 if ($conn->query($tableSQL) !== TRUE) {
-    http_response_code(400);
+    http_response_code(500);
     die("Error creating table: " . $tableSQL . "<br>" . $conn->error);
 }
 if ($conn->query($insertSQL) !== TRUE) {
-    http_response_code(400);
-    echo "Error adding record: " . $insertSQL . "<br>" . $conn->error;
+    http_response_code(500);
+    die("Error adding record: " . $insertSQL . "<br>" . $conn->error);
 }
 
 // Close the connection.
