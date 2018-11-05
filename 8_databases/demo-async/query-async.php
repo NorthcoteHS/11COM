@@ -4,7 +4,7 @@ Usage:
 
 1. Modifying this script:
     - Change the values for username, password, dbname.
-    - Program in your $tableSQL and $insertSQL commands.
+    - Program in your $querySQL command.
     - Host this PHP script on the same server as your SQL.
 2. Using the result:
     - Call this page from JS using AJAX.
@@ -15,24 +15,33 @@ Usage:
       https://www.w3schools.com/php/php_ajax_php.asp
 */
 
-// Setup DB info.
+/* --- INITIAL SETUP --- */
+/* STUDENTS: Setup your DB info here! */
 $servername = "localhost";
 $username = "demo";
 $password = "demo";
 $dbname = "dbDemo";
 
-// Create connection.
-$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection.
+/* --- SQL COMMANDS --- */
+/* STUDENTS: Program your SQL commands here! */
+
+// SQL to query the table for all records (ignore the "EOT" syntax).
+$querySQL = <<<EOT
+SELECT * FROM myTable ORDER BY tblScore DESC;
+EOT;
+
+
+/* --- SQL CONTINUED --- */
+// Create a SQL connection and check that it was successful.
+$conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     http_response_code(400);
 	die("Connection failed: " . $conn->connect_error);
 }
 
-// Query DB.
-$sql = "SELECT * FROM myTable ORDER BY tblScore DESC;";
-$resultObj = $conn->query($sql);
+// Issue pre-defined query SQL statement.
+$resultObj = $conn->query($querySQL);
 
 // Parse the query result.
 if ($resultObj->num_rows > 0) {
