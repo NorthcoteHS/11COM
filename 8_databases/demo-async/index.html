@@ -18,9 +18,9 @@
     <body>
         <!-- Input form. -->
         <h1>Enter a new high score</h1>
-        Name: <input type="text" id="tblName"><br>
-        Game: <input type="text" id="tblGame"><br>
-        Score: <input type="number" id="tblScore"><br><br>
+        Name: <input type="text" id="hscName"><br>
+        Game: <input type="text" id="hscGame"><br>
+        Score: <input type="number" id="hscScore"><br><br>
         <button onclick="submit()">Submit</button>
 
         <!-- Report. -->
@@ -58,9 +58,9 @@
 
                 // Build the data to submit.
                 var data = {
-                    tblName: document.getElementById('tblName').value,
-                    tblGame: document.getElementById('tblGame').value,
-                    tblScore: document.getElementById('tblScore').value
+                    hscName: document.getElementById('hscName').value,
+                    hscGame: document.getElementById('hscGame').value,
+                    hscScore: document.getElementById('hscScore').value
                 };
 
                 // Submit via AJAX.
@@ -92,7 +92,7 @@
                 // Build a table to display the results.
                 var out = '<tr><th>Name</th><th>Game</th><th>Score</th>';
                 result.forEach(function(row) {
-                    out += '<tr><td>' + row['tblName'] + '</td><td>' + row['tblGame'] + '</td><td>' + row['tblScore'] + '</td></tr>';
+                    out += '<tr><td>' + row['hscName'] + '</td><td>' + row['hscGame'] + '</td><td>' + row['hscScore'] + '</td></tr>';
                 });
 
                 // Update the table on the page.

@@ -45,20 +45,20 @@ ExtendedAddslash($_POST, $conn);
 
 // SQL to create the table, if it doesn't exist (ignore the "EOT" syntax).
 $tableSQL = <<<EOT
-CREATE TABLE IF NOT EXISTS myTable (
-    tblID INT AUTO_INCREMENT primary key NOT NULL,
-    tblName VARCHAR(100),
-    tblGame VARCHAR(100),
-    tblScore INT
+CREATE TABLE IF NOT EXISTS highScores (
+    hscID INT AUTO_INCREMENT primary key NOT NULL,
+    hscName VARCHAR(100),
+    hscGame VARCHAR(100),
+    hscScore INT
 );
 EOT;
 
 // SQL to insert the new record into the table (ignore the "EOT" syntax).
 $insertSQL = <<<EOT
-INSERT INTO myTable (tblName, tblGame, tblScore) VALUES (
-    {$_POST["tblName"]},
-    {$_POST["tblGame"]},
-    {$_POST["tblScore"]}
+INSERT INTO highScores (hscName, hscGame, hscScore) VALUES (
+    {$_POST["hscName"]},
+    {$_POST["hscGame"]},
+    {$_POST["hscScore"]}
 );
 EOT;
 

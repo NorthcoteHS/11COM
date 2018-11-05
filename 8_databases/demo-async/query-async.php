@@ -28,7 +28,7 @@ $dbname = "dbDemo";
 
 // SQL to query the table for all records (ignore the "EOT" syntax).
 $querySQL = <<<EOT
-SELECT * FROM myTable ORDER BY tblScore DESC;
+SELECT * FROM highScores ORDER BY hscScore DESC;
 EOT;
 
 
