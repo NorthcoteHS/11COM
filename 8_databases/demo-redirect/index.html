@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>High Scores</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <!-- Welcome and link to the report. -->
+        <h1>Welcome to the High Score Record!</h1>
+        <p><a href="./report.php">Click here</a> to see a report of all high scores, or enter a new high score below.</p>
+
+        <!-- Input form. -->
+        <form action="./submit.php" method="POST">
+            <h1>Enter a new high score</h1>
+            Name: <input type="text" name="hscName"><br>
+            Game: <input type="text" name="hscGame"><br>
+            Score: <input type="number" name="hscScore"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
