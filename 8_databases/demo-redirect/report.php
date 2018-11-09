@@ -43,9 +43,9 @@
         /* STUDENTS: Program your SQL commands here! */
 
         // SQL to query the table for all records (ignore the "EOT" syntax).
-        $querySQL = <<<EOT
-        SELECT * FROM highScores ORDER BY hscScore DESC;
-        EOT;
+$querySQL = <<<EOT
+SELECT * FROM highScores ORDER BY hscScore DESC;
+EOT;
 
 
         /* --- SQL CONTINUED --- */

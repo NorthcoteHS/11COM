@@ -50,23 +50,23 @@
         /* STUDENTS: Program your SQL commands here! */
 
         // SQL to create the table, if it doesn't exist (ignore the "EOT" syntax).
-        $tableSQL = <<<EOT
-        CREATE TABLE IF NOT EXISTS highScores (
-            hscID INT AUTO_INCREMENT primary key NOT NULL,
-            hscName VARCHAR(100),
-            hscGame VARCHAR(100),
-            hscScore INT
-        );
-        EOT;
+$tableSQL = <<<EOT
+CREATE TABLE IF NOT EXISTS highScores (
+    hscID INT AUTO_INCREMENT primary key NOT NULL,
+    hscName VARCHAR(100),
+    hscGame VARCHAR(100),
+    hscScore INT
+);
+EOT;
 
         // SQL to insert the new record into the table (ignore the "EOT" syntax).
-        $insertSQL = <<<EOT
-        INSERT INTO highScores (hscName, hscGame, hscScore) VALUES (
-            {$_POST["hscName"]},
-            {$_POST["hscGame"]},
-            {$_POST["hscScore"]}
-        );
-        EOT;
+$insertSQL = <<<EOT
+INSERT INTO highScores (hscName, hscGame, hscScore) VALUES (
+    {$_POST["hscName"]},
+    {$_POST["hscGame"]},
+    {$_POST["hscScore"]}
+);
+EOT;
 
 
         /* --- SQL CONTINUED --- */
