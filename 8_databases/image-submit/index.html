@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Submission Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <!-- If desired, you can put these into a form (with an action and method) and change to a submit button. -->
+        <!-- The "hidden" input is to send the file contents as an encoded string ("Data URL"). -->
+        <input type="file" id="myFile" name="myFile" accept="image/*" onchange="readImage()"><br><br>
+        <input type="hidden" id="myFileData" name="myFileData">
+        <button onclick="send()">Send image info</button><br>
+
+        <!-- A visualisation of the image. -->
+        <img id="myImage" src="">
+
+        <script>
+            // Retrieve pointers to elements.
+            var myFile = document.getElementById('myFile');
+            var myFileData = document.getElementById('myFileData');
+            var myImage = document.getElementById('myImage');
+
+            function readImage() {
+                // If a file was chosen, read the file contents as a "Data URL" (string).
+                if (myFile.files && myFile.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = updateImage;
+                    reader.readAsDataURL(myFile.files[0]);
+                }
+            }
+
+            function updateImage(event) {
+                // Store the file data into the hidden input and the image.
+                // (This triggers when the file is successfully read.)
+                myFileData.value = event.target.result;
+                myImage.src = event.target.result;
+            }
+
+            function send() {
+                // Currently just alerts the value - reprogram as desired!
+                alert(myFileData.value);
+            }
+        </script>
+    </body>
+</html>
