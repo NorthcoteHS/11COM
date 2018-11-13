@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>High Scores</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style type="text/css">
+            /* Format the table to have black cell borders. */
+            #display {
+                border-collapse: collapse;
+            }
+            #display td, #display th {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Input form. -->
+        <h1>Enter a new high score</h1>
+        Name: <input type="text" id="hscName"><br>
+        Game: <input type="text" id="hscGame"><br>
+        Score: <input type="number" id="hscScore"><br><br>
+        <button onclick="submit()">Submit</button>
+
+        <!-- Report. -->
+        <h1>High Scores</h1>
+        Sort by:
+        <select id="sortBy" onchange="query()">
+            <option value="name">Name</option>
+            <option value="game">Game</option>
+            <option value="score">Score</option>
+        </select>
+        <table id="display"></table>
+
+
+        <!-- Include JQuery for AJAX calls. -->
+        <script src="./jquery-3.3.1.min.js"></script>
+
+        <script>
+            /*
+                Students:
+                =========
+
+                Most of this script can be left as-is, without changing.
+                You will need to change these pieces:
+                    1. Change the fields of `data` in the submit() function.
+                    2. Change the entire refresh() function to create your report.
+                        - If you want your report to be a table, just modify the line inside of `result.forEach()`.
+                    3. Add any other JavaScript behaviour you want your page to have.
+                    4. Modify the HTML and CSS to add/change any content you want.
+            */
+
+            // Empty array (with global scope) to store the query results.
+            var result = [];
+
+            // Catch AJAX errors.
+            $(document).ajaxError(function(event, jqXHR, ajaxSettings, thrownError) {
+                console.log(jqXHR.responseText);
+            });
+
+            function submit() {
+                /* STUDENTS:  Modify the `data` field below. */
+
+                // Build the data to submit.
+                var data = {
+                    hscName: document.getElementById('hscName').value,
+                    hscGame: document.getElementById('hscGame').value,
+                    hscScore: document.getElementById('hscScore').value
+                };
+
+                // Submit via AJAX.
+                $.ajax({
+                    type: 'POST',
+                    url: './insert-async.php',
+                    data: data,
+                    success: function(data, status, xhr) {
+                        query();
+                    }
+                });
+            }
+
+            function query(data, status, xhr) {
+                // Send the query via AJAX.
+                $.ajax({
+                    type: 'POST',
+                    url: './query-async.php',
+                    data: {sortBy: document.getElementById('sortBy').value},
+                    success: function(data, status, xhr) {
+                        result = JSON.parse(data);
+                        refresh();
+                    }
+                });
+            }
+
+            function refresh() {
+                /* STUDENTS:  Modify this code to create your own report. */
+
+                // Build a table to display the results.
+                var out = '<tr><th>Name</th><th>Game</th><th>Score</th>';
+                result.forEach(function(row) {
+                    out += '<tr><td>' + row['hscName'] + '</td><td>' + row['hscGame'] + '</td><td>' + row['hscScore'] + '</td></tr>';
+                });
+
+                // Update the table on the page.
+                document.getElementById('display').innerHTML = out;
+            }
+
+            // Query the database when the window first loads.
+            window.onload = query;
+        </script>
+    </body>
+</html>
