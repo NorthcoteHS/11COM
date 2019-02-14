@@ -4,7 +4,7 @@
 
 In [Magic8Ball](http://appinventor.mit.edu/explore/ai2/magic-8-ball.html), you learned how to use lists and random values to generate a new response each time the button was clicked.
 
-Your task is to recreate Magic8Ball for the web. To do so, you will have to learn about arrays (the JavaScript version of a list). 
+Your task is to recreate Magic8Ball for the web. To do so, you will have to learn about arrays (the JavaScript version of a list).
 
 ## Steps
 

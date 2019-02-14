@@ -1,4 +1,4 @@
-# Unit 8: Databases
+# Unit 6: Databases
 
 For our final project of the year, we are developing software solutions that involve databases. Full instructions and assignment materials are avaialable in class.
 
