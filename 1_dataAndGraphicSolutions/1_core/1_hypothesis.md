@@ -29,27 +29,12 @@ and *then* state as the first entry of Part Two: "Hypothesis Number One: The tro
 in the electrical system." You think of as many hypotheses as you can, then you design
 experiments to test them to see which are true and which are false.
 
-Use the space below to brainstorm research questions.
+Use a blank paper or document to brainstorm research questions.
 When you are satisfied, choose **three** options that you would be interested to research as a project.
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-#### Options:
-
-1.
-
-2.
-
-3.
-
+| To submit |
+|---|
+| 1. Research questions (3 options) |
 
 ### Hypotheses
 
@@ -61,19 +46,18 @@ We will then collect data to see if we were right (testing the hypothesis).
 
 Pick one of your research questions from above and generate **three** hypotheses that might explain the answer.
 
-**Research question:**
-
-<br/>
-**Hypotheses:**
-
-1.
-
-<br/>
-2.
-
-<br/>
-3.
-
-<br/>
 **Note:** If you can't come up with 3 hypotheses, it may be a problem with your research question!
 "What", "Why", and "How" are ideal questions - anything with only a yes or no answer is too specific.
+
+| To submit |
+|---|
+| 2. Chosen research question |
+| 3. Hypotheses (3 options) |
+
+When you are finished, reflect on your hypotheses. Does one stand out?
+Remember, it should be something you can *test* and prove to be either true or false with data.
+When you're satisfied, choose the **one** hypothesis you will build a survey to test.
+
+| To submit |
+|---|
+| 4. Chosen hypothesis |
