@@ -10,11 +10,9 @@ These might be variables that directly answer our hypothesis, or others that mig
 See below for an example.
 
 > ##### Example: What are people's favourite subjects?
->**Hypothesis:** Younger students prefer science and older students prefer English.
-<br/>
-**Direct variables:** Favourite subject, Age
-<br/>
-**Other useful variables:** Least favourite subject (or rank each subject), Gender, Parents' profession, Age of siblings...
+>**Hypothesis:** Younger students prefer science and older students prefer English.<br/>
+>**Direct variables:** Favourite subject, Age<br/>
+>**Other useful variables:** Least favourite subject (or rank each subject), Gender, Parents' profession, Age of siblings...
 
 Choose one of your hypotheses and list *all* variables you will need to measure.
 
