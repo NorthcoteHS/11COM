@@ -55,4 +55,4 @@ One easy way to accomplish this is to:
 | To submit |
 |---|
 | 5. Link to participate in the survey |
-| 6. Invitation to collaborate (Settings -> Add collaborators -> `koopmans.erik.m@edumail.vic.gov.au`)
+| 6. Invitation to collaborate (Menu (...) -> Add collaborators -> `koopmans.erik.m@edumail.vic.gov.au`)
