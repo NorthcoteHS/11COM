@@ -54,5 +54,5 @@ One easy way to accomplish this is to:
 
 | To submit |
 |---|
-| 5. Link to participate in the survey |
+| 5. Link to participate in the survey (Send -> (-) icon -> Shorten URL -> Copy the link) |
 | 6. Invitation to collaborate (Menu (...) -> Add collaborators -> `koopmans.erik.m@edumail.vic.gov.au`)
