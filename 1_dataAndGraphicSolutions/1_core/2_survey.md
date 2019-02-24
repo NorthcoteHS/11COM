@@ -27,11 +27,21 @@ Choose one of your hypotheses and list *all* variables you will need to measure.
 Often in research, it is necessary to provide detailed information to participants about the purpose and methods of your investigation.
 For this assignment, your survey must begin with a participant information statement which fully explains:
 
+- your name, as the Primary Investigator
 - the investigation you are conducting;
 - the purpose of the data being collected;
 - how the data will be stored;
 - who will have access to the data;
 - where the findings will be published.
+
+As an example:
+
+>**Primary Investigator:** Mr. Koopmans<br>
+>I am researching people's favourite subjects at NHS, and whether there is a relationship to participants' age.
+>To answer this question, I am collecting information on people's favourite subjects, age, and other relevant information.
+>Your data will be collected and stored on Google Forms, and also stored on my own computer for analysis;
+>it will be available only to myself and my teacher (Mr. Koopmans).
+>My findings will be published within our class, VCE Computing, as part of our first SAC.
 
 Create a draft of an information statement that will serve as the first page of your survey.
 
