@@ -5,7 +5,6 @@
 When collecting data, we must be mindful to do so ethically.
 There are often laws in place to protect people's privacy when their personal information is collected.
 In Australia this includes the Australian Privacy Principles (APP).
-Description to come.
 
 ### Prerequisites
 

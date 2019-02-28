@@ -36,7 +36,8 @@ These include:
 - Small sample size
 - Bias through sorting
 
-Briefly define each of these forms of bias. Then, **using your variables from Core 2**, identify how bias might affect the quality of the data you are collecting and describe a way you will attempt to overcome this bias.
+Briefly define each of these forms of bias.
+Then, **using your variables from Core 2**, identify how bias might affect the quality of the data you are collecting and describe a way you will attempt to overcome this bias.
 
 | To submit |
 |---|
