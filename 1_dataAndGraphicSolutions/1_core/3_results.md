@@ -38,6 +38,7 @@ There are a few common techniques we use to "manipulate" data:
 - formulas
 - frequency tables
 - filtering/grouping
+- validation
 - multiple spreadsheets (tabs)
 
 Which ones you use will depend on your data and what you want to find out.
@@ -78,19 +79,29 @@ Another way to test if one value depends on another is a correlation.
 You're welcome to look up instructions on how to calculate a correlation between two sets of data.
 An easy way to start is often by visualising with a scatterplot.
 
+##### Validation
+
+You may notice that some of your data seems invalid, for instance unusually low or high ages.
+It's often necessary to clean up our data and remove suspicious values - this is part of "validation".
+
+It's your choice whether to remove a participant entirely, or just exclude the pieces of data from them that are suspicious.
+You may be able to include their other data, and only exclude them from analyses that use the variables affected.
+
 #### Your job
 
 Your job is to manipulate your data, using at least one of the methods above, until you are satisfied that you have answered your hypothesis.
+Also write a *brief* description of one of your manipulations.
 
-Then, write a *brief* answer to your hypothesis - were you right or wrong?
+Then, write an answer to your hypothesis - were you right or wrong?
 How do you know?
 Is there anything that makes the answer still unclear?
 
 | To submit |
 |---|
 | 2. Manipulated data (submit as .xlsx, even if using a different program!) |
-| 3. Was your hypothesis correct? (Yes/No/Hard to say) |
-| 4. Brief analysis of your hypothesis |
+| 3. Brief description of one manipulation |
+| 4. Was your hypothesis correct? (Yes/No/Hard to say) |
+| 5. Brief analysis of your hypothesis |
 
 ### Planning your infographic
 
@@ -113,5 +124,5 @@ Make sure to check back before starting Core 4 to update with any new data.
 
 | To submit |
 |---|
-| 5. Summary of planned graphics |
-| 6. Have you done all necessary manipulations? (Yes/no) |
+| 6. Summary of planned graphics |
+| 7. Have you done all necessary manipulations? (Yes/no) |
