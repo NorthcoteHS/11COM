@@ -45,10 +45,10 @@ Qualitative vs. quantitative is a useful distinction, but there is another commo
 - Interval
 - Ratio
 
-Research and *very briefly* describe the difference between these four categories.
+Research and *very briefly* describe the difference between these four categories, and give an example of each.
 Then, make a second copy of your data table, but replace the "quant/qual" column with "N/O/I/R", and indicate the category of each data item.
 
 | To submit |
 |---|
-| 2. Very brief description of the difference between N/O/I/R |
-| 3. Second data table, with quant/qual replaced by N/O/I/R |
+| 2. Very brief description of the difference between N/O/I/R, with an example of each |
+| 4. Second data table, with quant/qual replaced by N/O/I/R |
