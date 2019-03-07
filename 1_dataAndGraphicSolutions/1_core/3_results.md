@@ -101,7 +101,7 @@ Is there anything that makes the answer still unclear?
 | 2. Manipulated data (submit as .xlsx, even if using a different program!) |
 | 3. Brief description of one manipulation |
 | 4. Was your hypothesis correct? (Yes/No/Hard to say) |
-| 5. Brief analysis of your hypothesis |
+| 5. Analysis - how do you know it was correct or not? (Convince me) |
 
 ### Planning your infographic
 
