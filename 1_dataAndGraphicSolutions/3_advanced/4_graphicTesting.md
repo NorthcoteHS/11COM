@@ -52,7 +52,7 @@ When creating a graphic solution, it is important it meets these expectations:
 Use the test table below to evaluate your graphic solution.
 
 | Test | Test data | Expected result | Actual result (include evidence) |
-|---|---|---|---|---|
+|---|---|---|---|
 | Accuracy | Primary data collected | Results shown in the solution are exactly the same as the data collected | |
 | Communication of message | Primary data collected | The results of the data collected are clear for the user to identify in the solution | |
 | Completeness | Primary data collected | All of the valid data collected has been included in the solution | |
