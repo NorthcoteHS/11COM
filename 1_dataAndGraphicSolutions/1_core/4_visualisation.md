@@ -58,12 +58,13 @@ and may let you control how things are positioned more easily than Word or simil
 There are many formats and conventions we try to follow when creating visualisations.
 These include:
 
-    - Titles
-    - Text styles
-    - Shapes
-    - Lines and arrows
-    - Sources of data and legend
-    - Colours and contrasts
+- Titles
+- Text styles
+- Shapes
+- Lines and arrows
+- Sources of data and legend
+- Colours and contrasts
+- Layout
 
 Choose two and describe how you have incorporated these formats and conventions into your infographic.
 
