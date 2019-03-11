@@ -51,7 +51,7 @@ and may let you control how things are positioned more easily than Word or simil
 
 | To submit |
 |---|
-| 3. The final infographic! |
+| 3. The final infographic! (Use A3 and lots of colour) |
 
 ### Formats and conventions
 
