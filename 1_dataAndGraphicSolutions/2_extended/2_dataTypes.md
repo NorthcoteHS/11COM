@@ -16,7 +16,7 @@ Before completing **Extended 2**, you should have finished:
 
 ### Data table
 
-List the data items that need to be collected for the investigation (from **Core 2**).
+Create a table of the data items that need to be collected for the investigation (from **Core 2**).
 For each item, indicate:
 
 - whether it is quantitative or qualitative
@@ -47,6 +47,8 @@ Qualitative vs. quantitative is a useful distinction, but there is another commo
 
 Research and *very briefly* describe the difference between these four categories, and give an example of each.
 Then, make a second copy of your data table, but replace the "quant/qual" column with "N/O/I/R", and indicate the category of each data item.
+
+If you're unsure where to start, try [this resource](https://www.mymarketresearchmethods.com/types-of-data-nominal-ordinal-interval-ratio/).
 
 | To submit |
 |---|
