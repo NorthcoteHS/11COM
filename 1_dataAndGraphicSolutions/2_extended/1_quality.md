@@ -31,13 +31,18 @@ Begin by researching the terms "relevance" and "accuracy", and write a *1-senten
 Bias is any factor that may cause your data to be unreliable or unfair based on unevenly weighting information.
 These include:
 
-- Vested interest
-- Timing
+- Experimenter bias
+- Selection bias
+- Response bias
+- Recency bias
+- Recall bias
+- Measurement bias
+- Publication bias
 - Small sample size
-- Bias through sorting
 
-Briefly define each of these forms of bias.
+Briefly define four types of bias that can occur in research.
 Then, **using your variables from Core 2**, identify how bias might affect the quality of the data you are collecting and describe a way you will attempt to overcome this bias.
+If you are struggling with this step, consider the difference in **selection bias** between surveying the whole school vs. surveying only our class.
 
 | To submit |
 |---|
