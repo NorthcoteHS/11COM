@@ -19,7 +19,7 @@ There are many ways to visualise data. Choose 4, and for each:
 
 - give its name (e.g. Pie Chart)
 - provide an example from the Internet
-- identify what type of data it can visualise (Nominal, Ordinal, Interval, or Ratio - check Extended 2 if you don't know these!)
+- identify what type of data it can visualise (quantitative or qualitative)
 - briefly describe how it represents data
 
 | To submit |
