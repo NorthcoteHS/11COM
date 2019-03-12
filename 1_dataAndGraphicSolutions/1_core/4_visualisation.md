@@ -13,12 +13,10 @@ Begin here by listing those graphics you want to display (e.g. bar chart of favo
 Then, gather those graphics!
 Some of them might come directly from Google Forms (screenshot/print-screen and crop).
 Others might be charts or graphs you create in Excel.
-When they're ready, submit all of your individual graphics.
 
 | To submit |
 |---|
 | 1. List of graphics to use |
-| 2. All individual graphics (combined as a zip file, or collated onto a single Word file etc.) |
 
 ### Infographic
 
@@ -51,7 +49,7 @@ and may let you control how things are positioned more easily than Word or simil
 
 | To submit |
 |---|
-| 3. The final infographic! (Use A3 and lots of colour) |
+| 2. The final infographic! (Use A3 and lots of colour) |
 
 ### Formats and conventions
 
@@ -70,4 +68,4 @@ Choose two and describe how you have incorporated these formats and conventions 
 
 | To submit |
 |---|
-| 4. Description of 2 formats and conventions |
+| 3. Description of 2 formats and conventions |
