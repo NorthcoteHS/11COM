@@ -64,7 +64,8 @@ These include:
 - Colours and contrasts
 - Layout
 
-Choose two and describe how you have incorporated these formats and conventions into your infographic.
+Choose two and describe how you have incorporated these formats and conventions into your infographic,
+and how they improve your final product.
 
 | To submit |
 |---|
