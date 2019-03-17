@@ -47,7 +47,7 @@ You may also find these resources useful for eye-catching icons:
 
 | To submit |
 |---|
-| 2. The final infographic! (Use lots of colour) |
+| 2. The final infographic! (Use lots of colour, and include your full name and the course name somewhere legible) |
 
 ### Formats and conventions
 
