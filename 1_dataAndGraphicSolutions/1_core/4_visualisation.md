@@ -40,12 +40,10 @@ You may find these resources useful for eye-catching icons:
 - [Google Material Icons](https://material.io/tools/icons/)
 
 You are free to use any software you like.
-You may want to use an online infographic creator like [Piktochart](https://piktochart.com/formats/infographics/),
+You may want to use an online infographic creator like [Canva](https://www.canva.com/create/infographics) or [Piktochart](https://piktochart.com/formats/infographics/),
 a graphic editor (eg. Photoshop or Illustrator),
-or your standard word editor (eg. MS Word).
-
-Note that MS Powerpoint is another popular tool for poster creation (using a single "slide"),
-and may let you control how things are positioned more easily than Word or similar.
+your standard word editor (eg. MS Word),
+or MS Powerpoint with a single slide (easier to control layout/positioning than word editors).
 
 | To submit |
 |---|
