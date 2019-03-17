@@ -34,16 +34,16 @@ Use these examples and others on the Internet to design your own infographic.
 Make sure the information is *complete* and *accurate*, and that it is focused on your original hypothesis.
 Try to tell a story - your reader should be able to look at your infographic and clearly understand your message.
 
-You may find these resources useful for eye-catching icons:
-
-- [FlatIcon](https://www.flaticon.com/)
-- [Google Material Icons](https://material.io/tools/icons/)
-
 You are free to use any software you like.
 You may want to use an online infographic creator like [Canva](https://www.canva.com/create/infographics) or [Piktochart](https://piktochart.com/formats/infographics/),
 a graphic editor (eg. Photoshop or Illustrator),
 your standard word editor (eg. MS Word),
 or MS Powerpoint with a single slide (easier to control layout/positioning than word editors).
+
+You may also find these resources useful for eye-catching icons:
+
+- [FlatIcon](https://www.flaticon.com/)
+- [Google Material Icons](https://material.io/tools/icons/)
 
 | To submit |
 |---|
