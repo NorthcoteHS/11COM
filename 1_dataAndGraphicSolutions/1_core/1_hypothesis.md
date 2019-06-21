@@ -18,7 +18,7 @@ On this assignment, you will be completing the first two steps: asking a researc
 
 Research starts by asking a question.
 Research questions can be about absolutely *anything*, but that doesn't mean every research question is good.
-To quote Henry Pirsig (*Zen and the Art of Motorcycle Maintenance*):
+To quote Robert M. Pirsig (*Zen and the Art of Motorcycle Maintenance*):
 
 > ... the main skill is in stating absolutely no more than you are positive you know.
 It is much better to enter a statement "Solve Problem: Why doesn't cycle work?" which
