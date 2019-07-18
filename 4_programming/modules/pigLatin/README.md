@@ -10,9 +10,10 @@ Your program should be able to translate single words to Pig Latin. As an extens
 
 ## Steps
 
-1. Always start by copying and renaming `template.html` for the current module.
+1. Open Brackets. In your GH folder, **pull from upstream** to get the latest changes, then create a new file.
 
-    - Name the file `pigLatin.html` in this module's directory.
+    - Save the new file as `pigLatin.html` in *this directory* (`GH/4_programming/modules/pigLatin/`).
+    - Fill out the basic structure of the HTML from memory, or use a template or past project.
 
 2. Create an `<input>` element to get the phrase from the user.
 

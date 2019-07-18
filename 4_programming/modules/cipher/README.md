@@ -12,9 +12,10 @@ Your task is to create a program that will encode a message (input by the user) 
 
 ## Steps
 
-1. Always start by copying and renaming `template.html` for the current module.
+1. Open Brackets. In your GH folder, **pull from upstream** to get the latest changes, then create a new file.
 
-    - Name the file `cipher.html` in this module's directory.
+    - Save the new file as `cipher.html` in *this directory* (`GH/4_programming/modules/cipher/`).
+    - Fill out the basic structure of the HTML from memory, or use a template or past project.
 
 2. Create an `<input>` element to get the phrase from the user.
 
