@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File IO Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <!-- Create an invisible file input box (used below). -->
+        <input id="inputfile" type="file" style="display:none;" onchange="importData()">
+
+        <!-- Buttons for different options. -->
+        <div>
+        <button onclick="exportData()">Export data</button>
+        <button onclick="clearData()">Clear data</button>
+        <button onclick="document.getElementById('inputfile').click()">Import data</button>
+        </div>
+
+        <!-- Display the contents of data. -->
+        <h3>Current value of data:</h3>
+        <p id="display"></p>
+
+        <!-- You MUST include FileSaver.js to use saveAs! -->
+        <script src="FileSaver.js"></script>
+
+        <script>
+            // Example data to save - notice that it is all stored in a single variable (an "object").
+            var data = {
+                a: 1,
+                b: 'Hello',
+                c: ['this', 'is', 'an', 'array']
+            };
+
+
+            function exportData() {
+                // Convert the data to a string, then save (using saveAs, a tool from FileSaver.js).
+                var dataString = JSON.stringify(data);
+                var blob = new Blob([dataString], {type: "text/plain;charset=utf-8"});
+                saveAs(blob, 'test.txt');
+            }
+
+            function clearData() {
+                // Clear the data (to demonstrate the import/export process).
+                data = {};
+
+                // Refresh the display.
+                refresh();
+            }
+
+            function importData() {
+                // Get reference to the file input box.
+                var inputfile = document.getElementById('inputfile');
+
+                // Check that a file was selected.
+                if (inputfile.files && inputfile.files[0]) {
+                    // Start the file reader and tell it to run "receiveData" when finished.
+                    var reader = new FileReader();
+                    reader.onload = receiveData;
+                    reader.readAsText(inputfile.files[0]);
+                }
+            }
+
+            function receiveData(event) {
+                // Retrieve the information and update data.
+                var result = event.target.result;
+                data = JSON.parse(result);
+
+                // Refresh the display.
+                refresh();
+            }
+
+            function refresh() {
+                // Display the current contents of data.
+                document.getElementById('display').innerHTML = JSON.stringify(data);
+            }
+
+            // Refresh the display.
+            refresh();
+        </script>
+    </body>
+</html>
