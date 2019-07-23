@@ -38,9 +38,16 @@ Your task is to create a basic program to generate a receipt for products purcha
 
 ## Steps
 
-1. Open Brackets. In your GH folder, **pull from upstream** to get the latest changes, then create a new file.
+> Note: These steps are written assuming an HTML approach, with `<input>` and `<button>` elements. To adapt to pure JS, try using:
+>
+>   - a loop
+>   - 2x `prompt()` (for item name and price)
+>   - check the item name for the keyword "quit" to finish
+>   - display the result in an alert
 
-    - Save the new file as `receipt.html` in *this directory* (`GH/4_programming/modules/receipt/`).
+1. Always start by opening Brackets, creating a new file, and saving it.
+
+    - Save the new file as `receipt.html`.
     - Fill out the basic structure of the HTML from memory, or use a template or past project.
 
 2. Create two `<input>` elements to get the item name and price, and two `<button>` elements to submit an item and to finish.
