@@ -1,7 +1,5 @@
 # arrays
 
-We saw arrays at the start of the course, when you made your Magic 8-Ball in App Inventor (remember choosing a random response from a list?). We'll take some time now to talk about them a bit more formally.
-
 In JavaScript, an array is a variable that can have multiple items inside. For instance, imagine a shopping list with 6 items - we could write that as 6 separate variables:
 
 ```js
@@ -128,7 +126,28 @@ last2 = shopping.slice(-2);     // Contains ['Pizza', 'Ice cream'].
 
 There's plenty more that can be done with arrays! Check out the [JS arrays intro](https://www.w3schools.com/js/js_arrays.asp), [JS array methods](https://www.w3schools.com/js/js_array_methods.asp), and [array sorting](https://www.w3schools.com/js/js_array_sort.asp) on W3Schools.
 
-## Exercises
+## Exercises (Normal)
+
+Make a new folder for this lesson, e.g. `arrays`, and make the following HTML files (copy the template HTML in `resources` as a starting point for each):
+
+1. `classRoll.html`: This function has multiple steps. It should:
+    - Create the following array: `roll = ['Jessica', 'Emily', 'Jordan', 'Kayley', 'Bruce', 'Michael', 'Everett', 'Lisa', 'Sam', 'Noah'];`
+    - Log the array (using `console.log()`).
+    - Students take turns each week cleaning the class guinea pig cage. Alert (using `alert()`) the name of the third student on the roll, so they know it's their turn.
+    - Log the length of the array.
+    - Then, add `'James'` to the end of the roll, and log the new roll.
+    - `'Jordan'` changed schools. Remove him, and log the new roll.
+    - `'Michael'` prefers to go by 'Mike'. Change his name, and log the new roll.
+    - (Challenge) Alphabetise the roll and log.
+    - (Challenge) Reverse the array and log.
+    - (Challenge) Log the name of a random student in the class (not tested).
+    - (Challenge) Split the array into two, each with 5 students (one with the first half of the class, the other with the second), and log like `console.log(list1, list2)`.
+
+When finished, submit all components to MyNH.
+
+## Exercises (Auto-tester)
+
+*These instructions are designed for return visitors who have already learned functions.*
 
 In your GH folder, **pull from upstream** to get the latest changes. Then find *this folder* (`GH/3_programming/lessons/arrays/`), open `arrays.html`, and create the following functions in the `<script>` block:
 

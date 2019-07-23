@@ -66,7 +66,21 @@ for (var i=0; i<shopping.length; i++) {
 
 Here we let `i` start at 0 and count up until one less than `shopping.length`, using it as an "index" into the array at each step.
 
-## Exercises
+## Exercises (Normal)
+
+Make a new folder for this lesson, e.g. `forLoops`, and make the following HTML files (copy the template HTML in `resources` as a starting point for each):
+
+1. `countup.html`: Uses a for loop to count up from 1 to 10, alerting each value.
+2. `countdown.html`: Uses a for loop to count down from `x` to 1, alerting each value, then alerts BLASTOFF!
+3. `goodDog.html`: Creates the array `dogs = ['Spot', 'Rex', 'Bob', 'Rufus'];`, then loops through the array and alerts a statement calling each dog a good boy. Specifically, it should say "[name] is a good boy!" for each name.
+4. `squareNumbers.html`: Creates an array called `squares`, and loops through each number from 1 to `x`, adding its square to the array (use `Math.pow(value,2)` to get the square). When finished, alerts the array.
+    - For example, if the function receives 4, it should alert the array `[1, 4, 9, 16]`.
+
+When finished, submit all components to MyNH.
+
+## Exercises (Auto-tester)
+
+*These instructions are designed for return visitors who have already learned functions.*
 
 In your GH folder, **pull from upstream** to get the latest changes. Then find *this folder* (`GH/3_programming/lessons/forLoops/`), open `forLoops.html`, and create the following functions in the `<script>` block:
 

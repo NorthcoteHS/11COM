@@ -77,7 +77,21 @@ while (true) {
 
 This program will never end, and it would cause your program to crash. **Do not write infinite loops!** If you look at our first example, the line `x = x + 1` prevented it from being infinite.
 
-## Exercises
+## Exercises (Normal)
+
+Make a new folder for this lesson, e.g. `ifWhile`, and make the following HTML files (copy the template HTML in `resources` as a starting point for each):
+
+1. `max.html`: Gets two values from the user and alerts the larger of the two values, using an if statement.
+2. `max3.html`: Gets three values from the user and alerts the largest, using nested if statements.
+3. `numToWord.html`: Gets a digit (0-9) from the user and alerts the digit as a word (in English), using a series of if/else if statements.
+4. `countdown.html`: Gets a positive integer from the user and counts down to 0, alerting each value.
+5. `halver.html`: Gets a positive number from the user and repeatedly divides by 2, until it is less than 1. Alerts the end result (a value between 0-1).
+
+When finished, submit all components to MyNH.
+
+## Exercises (Auto-tester)
+
+*These instructions are designed for return visitors who have already learned functions.*
 
 In your GH folder, **pull from upstream** to get the latest changes. Then find *this folder* (`GH/3_programming/lessons/ifWhile/`), open `ifWhile.html`, and create the following functions in the `<script>` block:
 
