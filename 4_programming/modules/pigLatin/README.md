@@ -51,6 +51,7 @@ Your program should be able to translate single words to Pig Latin. As an extens
 | String manipulation | <ul><li>[JS string methods (W3Schools)](https://www.w3schools.com/js/js_string_methods.asp) - especially `slice()` and `split()`</li><li>to get the first letter, try `str[0]` or `str.charAt(0)`</li><li>[JS string length](https://www.w3schools.com/jsref/jsref_length_string.asp)</li><li>to work on each word separately, try `str.split(' ')`</li></ul> |
 | Loops                | <ul><li>[JS for loop](https://www.w3schools.com/js/js_loop_for.asp)</li><li>[Looping through each character in a string (StackOverflow)](https://stackoverflow.com/a/1967132/4080966)</li></ul> |
 | Displaying results   | <ul><li>[JavaScript output summary (W3Schools)](https://www.w3schools.com/js/js_output.asp)</li><li>Option 1: [JS alert box](https://www.w3schools.com/js/js_popup.asp)</li><li>Option 2: [Changing HTML content](https://www.w3schools.com/js/js_htmldom_html.asp)</li><li>Option 3: [console.log](https://www.w3schools.com/jsref/met_console_log.asp)</li></ul> |
+| General     | <ul><li>[StackOverflow](https://stackoverflow.com/)</li><li>[W3Schools](https://www.w3schools.com/)</li><li>[CSS-Tricks](https://css-tricks.com/)</li><li>[Course Resources](/resources/)</li></ul> |
 
 For HTML versions (using `<input>`, buttons, and `.innerHTML`):
 
