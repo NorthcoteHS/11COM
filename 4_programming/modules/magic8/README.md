@@ -11,7 +11,7 @@ Your task is to create a Magic 8-Ball for the web that generates a random answer
 
 1. Always start by opening Brackets, creating a new file, and saving it.
 
-    - Save the new file as `calculator.html`.
+    - Save the new file as `magic8.html`.
     - Fill out the basic structure of the HTML from memory, or use a template or past project.
 
 2. Get the user's yes/no question, either using `prompt()` or an `<input>` and `<button>`.
