@@ -1,6 +1,6 @@
 # fileTypes
 
-The next step in data analysis is to be able to read from and write to files.
+The next step in data analysis is to be able to read and write files.
 When we gather large amounts of data we typically use files that we can store and manipulate.
 
 Before we can learn to program with files, we need to know what kind of files we'll be working with.
@@ -16,7 +16,7 @@ Some of them are very hard to interpret (e.g. zip files and other "binary" files
 The ones that can be plainly read are called "plaintext", and will appear as regular text when you open them in a program like Notepad or TextEdit.
 The two main types of plaintext files we'll look at are `.txt` and `.csv`.
 
-### `.txt` files
+### TXT files
 
 These are the most basic plaintext file.
 They can have any text inside them, with no special formatting.
@@ -37,7 +37,7 @@ If you don't see the `.txt` extension on the final file, it means your operating
 **Turn this feature off!**
 Instructions for Windows [here](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/).
 
-### `.csv` files
+### CSV files
 
 These are simply plaintext files that use commas to store data in a certain way.
 CSV stands for "Comma-Separated Values", and is a way we can store a list (or table) of data.

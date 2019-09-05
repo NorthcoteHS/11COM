@@ -14,7 +14,7 @@ To use it in our programs we must:
 
 1. [Download FileSaver.js](https://github.com/eligrey/FileSaver.js/raw/master/dist/FileSaver.js).
 2. Put the file in the same directory as our program.
-3. In the HTML, before our own `<script>` we must include `FileSaver.js` (`./` means to look in the current directory):
+3. In our HTML, before our own `<script>` we must include `FileSaver.js` (`./` means to look in the current directory):
 
     ```js
     <script src="./FileSaver.js"></script>
@@ -48,6 +48,8 @@ function saveText(text, filename) {
 }
 ```
 
+#### Recap
+
 That's all for saving files!
 To recap:
 
@@ -57,7 +59,7 @@ To recap:
 4. Send the string and a filename to `saveText()`, e.g. `saveText(str, 'test.txt');`
     - If you want to write a CSV, just make sure to use a `.csv` file extension!
 
-#### Newlines
+### Newlines
 
 If you want your text to take up multiple lines, you need to include newlines in the string.
 You may have noticed this isn't easy to do:
