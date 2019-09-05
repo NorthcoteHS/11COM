@@ -161,10 +161,23 @@ var myArray = csvString.split(',');
 
 As mentioned, note that the result will still be a string - so if you're doing any math, remember to `parseFloat()` them first!
 
+## Advanced usage
+
+For an example of more advanced usage of file input/output, take a look at `index.html` in this directory.
+
+In particular, this file saves data as a "JSON" format, and is able to restore the data into the exact same state.
+This could be useful for game save files, etc.
+
 ## Exercises
 
+Make a **new folder** for this lesson named `fileIO`, and make the following HTML files:
 
+1. `helloFile.html`: Writes *only* the message `Hello, World!` to a text file named `helloFile.txt`.
+2. `helloMessage.html`: Lets the user type any message (using an `<input>` or `prompt()`) and saves it to a text file named `helloMessage.txt`.
+3. `readMessage.html`: Reads any message from a text file and displays it (using `alert()` or `.innerHTML`).
+4. `csvOut.html`: Lets the user enter multiple values (using multiple `<input>`s or `prompt()`s) and saves the result as a CSV file.
+5. `rowAverage.html`: Reads a CSV file, splits it into an array, computes the average, and displays it (using `alert()` or `.innerHTML`). Remember to use `parseFloat()`!
+6. `multiAverage.html`: Challenge! Read a multi-line CSV, and compute and display the average for each row (multiple displays)!
+7. `columnAverage.html`: Extra challenge! Read a multi-line CSV **with header**, and compute the average of the second column (make sure its numeric). For an even better program, allow the user to specify which column to average!
 
-This HTML file demonstrates how to perform basic File Input/Output, in particular to save and later restore the value of variables.
-
-Note that to save files, you will need to include `FileSaver.js` in your code (see the demo for an example).
+When finished, submit all components to MyNH.
