@@ -17,8 +17,8 @@ As soon as we rely on outside sources, it is important to ensure the data is aut
 
 The most reliable sources of authentic data are generally from government departments:
 
-- Australian [Bureau of Meteorology (BOM)](http://www.bom.gov.au/climate/data/)
-- [Australian Bureau of Statistics](https://www.abs.gov.au/)
+- [Australian Bureau of Meteorology (BOM)](http://www.bom.gov.au/climate/data/)
+- [Australian Bureau of Statistics (ABS)](https://www.abs.gov.au/)
 - [Data Vic](https://data.vic.gov.au/)
 - [Data.gov.au](https://data.gov.au/)
 
