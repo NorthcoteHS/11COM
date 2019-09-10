@@ -33,7 +33,7 @@ I could make notes:
 To create a `.txt` file, you can open Notepad or TextEdit and save (in TextEdit you need to convert to plaintext first - instructions [here](https://www.techjunkie.com/textedit-plain-text-mode/)).
 Or you can go to your destination folder, right-click, and choose New -> Text document.
 
-If you don't see the `.txt` extension on the final file, it means your operating system is set to hide them.
+**Note about hidden extensions:** If you don't see the `.txt` extension on the final file, it means your operating system is set to hide them.
 **Turn this feature off!**
 Instructions for Windows [here](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/).
 
@@ -54,16 +54,19 @@ Iron Man,The Incredible Hulk,Iron Man 2,Thor,Captain America: The First Avenger,
 ```
 
 Notice that the commas work very nicely to separate the items.
-The list above has 6 items, which we can count easily.
+The list above has 6 items ("columns"), which we can count easily.
 We do run into problems if an item needs to contain a `,` - but we'll discuss that further below.
 
 You can create a `.csv` file the same way you make a text file, but when naming it, use `.csv` as the extension (instead of `.txt`).
 This is where you need to be able to see the extensions - if they're hidden, you may end up with a file like `myfile.csv.txt`!
 
+For this lesson, make sure you always edit CSV files in Notepad/TextEdit (not Excel).
+
 #### Multiple rows
 
 The main purpose for CSV files is to store multiple rows of data, or a "table".
-These often have a header row that says what each column contains:
+These often have a header row that says what each column contains.
+For instance, this CSV file shows a table with 5 rows (including 1 header row), and 3 columns on each row:
 
 ```
 Name,Age,Favourite Colour

@@ -16,11 +16,18 @@ To use it in our programs we must:
 2. Put the file in the same directory as our program.
 3. In our HTML, before our own `<script>` we must include `FileSaver.js` (`./` means to look in the current directory):
 
-    ```js
-    <script src="./FileSaver.js"></script>
-    <script>
-        // Your code here.
-    </script>
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <body>
+        ... Some HTML ...
+
+        <script src="./FileSaver.js"></script>
+        <script>
+          // Your code here.
+        </script>
+      </body>
+    </html>
     ```
 
 ### Using FileSaver
@@ -46,6 +53,12 @@ function saveText(text, filename) {
     var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
     saveAs(blob, 'test.txt');
 }
+```
+
+Then you can use `saveText()` like so:
+
+```js
+saveText('This is a message', 'file.txt');
 ```
 
 #### Recap
@@ -180,6 +193,6 @@ Make a **new folder** for this lesson named `fileIO`, and make the following HTM
 4. `csvOut.html`: Lets the user enter multiple values (using multiple `<input>`s or `prompt()`s) and saves the result as a CSV file.
 5. `rowAverage.html`: Reads a CSV file, splits it into an array, computes the average, and displays it (using `alert()` or `.innerHTML`). Remember to use `parseFloat()`!
 6. `multiAverage.html`: Challenge! Read a multi-line CSV, and compute and display the average for each row (multiple displays)!
-7. `columnAverage.html`: Extra challenge! Read a multi-line CSV **with header**, and compute the average of the second column (make sure its numeric). For an even better program, allow the user to specify which column to average!
+7. `columnAverage.html`: Extra challenge! Read a multi-line CSV **with header**, and compute the average of the second column (make sure it's numeric). For an even better program, allow the user to specify which column to average!
 
 When finished, submit all components to MyNH.
