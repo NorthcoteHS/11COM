@@ -1,7 +1,5 @@
 # authenticData
 
-**Note:** This lesson is incomplete!
-
 Now our goal is to access *real* data from the Internet and analyse it.
 Your job is to find some authentic data and begin looking for patterns.
 

@@ -12,7 +12,7 @@ Rather than coding everything ourselves, we will use an open-source library name
 This project is available on [GitHub](https://github.com/eligrey/FileSaver.js/) and [NPM](https://www.npmjs.com/package/file-saver/v/1.3.2), where it has over 500k downloads/week.
 To use it in our programs we must:
 
-1. [Download FileSaver.js](https://github.com/eligrey/FileSaver.js/raw/master/dist/FileSaver.js).
+1. [Download FileSaver.js](https://github.com/eligrey/FileSaver.js/raw/master/dist/FileSaver.js) (right-click and Save as).
 2. Put the file in the same directory as our program.
 3. In our HTML, before our own `<script>` we must include `FileSaver.js` (`./` means to look in the current directory):
 
