@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>11COM SAC5</title>
+    </head>
+
+    <body>
+        <!-- File inputs and "go" button. -->
+        <p>
+            Daily rainfall:
+            <input id="inputRain" type="file" onchange="readFile(this, 'rain')">
+        </p>
+        <p>
+            Daily max temp:
+            <input id="inputTemp" type="file" onchange="readFile(this, 'temp')">
+        </p>
+        <p>
+            <button onclick="action()">Compute results</button>
+        </p>
+
+        <script>
+            // Pre-allocate global variables.
+            var rain, temp = null;
+
+            function readFile(inputEl, varname) {
+                // STUDENTS: Leave this function alone! You don't need to change it.
+                // Check that a file was selected.
+                if (inputEl.files && inputEl.files[0]) {
+                    // Start the file reader and tell it to run "receiveData" when finished.
+                    var reader = new FileReader();
+                    reader.onload = function () {
+                        if (varname == 'rain')      { rain = reader.result; }
+                        else if (varname == 'temp') { temp = reader.result; }
+                    };
+                    reader.readAsText(inputEl.files[0]);
+                }
+            }
+
+            function action() {
+                // STUDENTS: Continue programming here!
+                // - You have access to two variables, "rain" and "temp".
+                // - As an example, the code below logs the contents of each variable.
+                // - (You may delete these console.log statements if you like).
+                console.log(rain);
+                console.log(temp);
+
+                // WRITE YOUR OWN CODE HERE.
+            }
+        </script>
+    </body>
+</html>
