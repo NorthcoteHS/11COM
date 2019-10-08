@@ -40,12 +40,12 @@ Make a **new folder** for this lesson named `authenticData`, and:
 
     - Create a web program that can read the CSV and report the average rainfall for a *specific year*.
     - Example: When the file `<input>` is clicked you may have a prompt asking which year, and an alert to display the average for that year.
-    - As an extension, try displaying the average for every year in a formatted table in HTML.
+    - As an extension, try displaying the average for every year in a formatted table in HTML (or a graph, using [`Chart.js`](https://www.chartjs.org/)!).
 
 3. Continuing to use the same CSV data file:
 
     - Create a web program that can read the CSV and report the average rainfall for a *specific month*.
     - Compare the months: which month has the highest (and lowest) rainfall? Submit your answers, as well as your program.
-    - As an extension, try displaying the average for every year in a formatted table in HTML (or a graph, using [`Chart.js`](https://www.chartjs.org/)!).
+    - As an extension, try displaying the average for every month in a formatted table in HTML (or a graph, using [`Chart.js`](https://www.chartjs.org/)!).
 
 When finished, submit all components to MyNH.
