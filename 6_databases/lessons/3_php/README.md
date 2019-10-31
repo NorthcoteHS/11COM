@@ -41,7 +41,7 @@ For instance, this PHP produces the HTML shown below it:
     <?php
       echo "<ul>";
       for ($i=0; $i < 5; $i++) {
-        echo "<li>Item " . $i+1 . "</li>";
+        echo "<li>Item " . ($i+1) . "</li>";
       }
       echo "</ul>";
     ?>
